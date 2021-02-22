@@ -39,7 +39,7 @@ from bpy.types import (Panel,
 
 class UISettings(PropertyGroup):
     """Mesh Selection Boxes"""
-    src_mesh = PointerProperty(
+    src_mesh: PointerProperty(
         type=bpy.types.Mesh, 
         name="Source Mesh", 
         description="Select a source mesh", 
@@ -47,7 +47,7 @@ class UISettings(PropertyGroup):
         update=None
         )
     
-    dest_mesh = PointerProperty(
+    dest_mesh: PointerProperty(
         type=bpy.types.Mesh, 
         name="Destination Mesh", 
         description="Select a destination mesh", 

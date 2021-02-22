@@ -509,7 +509,7 @@ class CUSTOM_OT_actions(bpy.types.Operator):
     bl_description = "Move items up and down, add and remove"
     bl_options = {'REGISTER'}
 
-    action = bpy.props.EnumProperty(
+    action: bpy.props.EnumProperty(
         items=(
             ('UP', "Up", ""),
             ('DOWN', "Down", ""),
